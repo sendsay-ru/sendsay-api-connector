@@ -1,0 +1,9 @@
+*.iml
+.DS_Store
+.babelcache
+.env
+.npm
+.tmp
+coverage
+lib
+node_modules

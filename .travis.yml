@@ -1,0 +1,16 @@
+language: node_js
+node_js: node
+install:
+- npm install
+script:
+- npm run travis
+deploy:
+  provider: npm
+  email: sendsay-cat@yandex.ru
+  skip_cleanup: true
+  api_key:
+    secure: a8HADqtg10gP/M9fz1MMNIjE9gWPAe6Vk0R6r5QlpO8wgx27UnayMMlqZp+jD3Nah/xOXuSLgKcYZdvKInqCnAWCRqccpOMRET6BAY10lks0uPZV3v9fPARO+I1GCHsCmcFnyyolvZYxhO+zhdAEVPb0wSVHV/bWQ213OmlKIzx1JK3fk/Nw0V9z3aOi2MyFaDADz/Mcsm8cHy1QvEARf+S3Lv7L5HRYtUo60Ikj9mHTs35OVMVI8NYRJnb0CsVMiGm83o4Xf0GEhZppvABCj0VFMni8BIvyVM3ZLgHFMOw53hhUbgcWTb7DpJQkHOJd3M7gPum9TSumBnBVqrfsVIdSnMe25/kxDqFHfSzhNi/bwAmbJd6e5+9DxioAzyUu5JOxGU6KTJKkHTVOhEmxZsuYMGppaePpiy/8WCxsmadOxGuQ4zC30QXd2NNweUahD3OhwKApsSdsDNrRRtgdwbQcirBHLsYzRHXJZ4NvV1vEz2QFPW67p3TGpUYcIsUBtby25pvFtZxdzOeK5g3b1L73GFuo7T3TW/fGNxIuFghwtQK1/55kow7vwP56cej2PNg7qiLrA6LZor57073cV6YX8kQqVu61E282hMEwhpR64IyTRfL1cXWw0eWzuhVl71KEbK9BlvwrTXdqI472UXO+rRKnf7PTzzG/PylC9Jw=
+  on:
+    tags: true
+    repo: sendsay-ru/sendsay-api-connector
+    branch: master

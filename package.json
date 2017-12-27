@@ -1,0 +1,28 @@
+{
+  "name": "sendsay-api-connector",
+  "version": "0.0.1",
+  "description": "Sendsay API Connector for Node.js",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "travis": "./bin/travis.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zouxuoz/sendsay-api-connector.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zouxuoz/sendsay-api-connector/issues"
+  },
+  "homepage": "https://github.com/zouxuoz/sendsay-api-connector#readme",
+  "dependencies": {
+    "node-fetch": "^1.7.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
