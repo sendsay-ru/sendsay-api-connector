@@ -1,6 +1,6 @@
 {
   "name": "sendsay-api-connector",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Sendsay API Connector for Node.js",
   "main": "lib/index.js",
   "scripts": {
@@ -11,8 +11,8 @@
     "type": "git",
     "url": "git+https://github.com/sendsay-ru/sendsay-api-connector.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "zouxuoz <zouxuoz@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/sendsay-ru/sendsay-api-connector/issues"
   },
