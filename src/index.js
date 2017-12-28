@@ -1,2 +1,7 @@
+import Connector from './Connector';
+
+const sendsay = new Connector();
+
 export { default as RequestError } from './RequestError';
-export { default } from './Connector';
+export { Connector } from './Connector';
+export default sendsay;
