@@ -13,13 +13,16 @@ class Connector {
     return (new Date(now - offset)).toISOString();
   }
 
-  constructor({ url }) {
+  constructor() {
     this.requestNumber = (new Date()).getTime();
-    this.url = url;
   }
 
   setSession(session) {
     this.session = session;
+  }
+
+  setUrl(url) {
+    this.url = url;
   }
 
   setKey(key) {
@@ -36,6 +39,10 @@ class Connector {
 
   request(req, options = {}) {
     const nextOptions = { redirected: 0, ...options };
+
+    if (!this.url) {
+      throw new Error('Sendsay API Connector: url is not defined');
+    }
 
     return fetch(`${this.url}${this.redirect || ''}`, {
       method: 'POST',
