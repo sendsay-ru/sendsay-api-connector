@@ -1,6 +1,6 @@
 {
   "name": "sendsay-api-connector",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Sendsay API Connector for Node.js",
   "main": "lib/index.js",
   "scripts": {
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zouxuoz/sendsay-api-connector.git"
+    "url": "git+https://github.com/sendsay-ru/sendsay-api-connector.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zouxuoz/sendsay-api-connector/issues"
+    "url": "https://github.com/sendsay-ru/sendsay-api-connector/issues"
   },
-  "homepage": "https://github.com/zouxuoz/sendsay-api-connector#readme",
+  "homepage": "https://github.com/sendsay-ru/sendsay-api-connector#readme",
   "dependencies": {
     "node-fetch": "^1.7.3"
   },
