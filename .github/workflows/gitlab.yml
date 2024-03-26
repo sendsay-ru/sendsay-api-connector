@@ -14,5 +14,5 @@ jobs:
           fetch-depth: 0
       - uses: pixta-dev/repository-mirroring-action@v1
         with:
-          target_repo_url: git@gitlab.sndsy.ru:sendsay-ru/account.git
+          target_repo_url: git@gitlab.sndsy.ru:sendsay-ru/sendsay-api-connector.git
           ssh_private_key: ${{ secrets.GITLAB_SSH_PRIVATE_KEY }}
